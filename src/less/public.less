@@ -1,0 +1,65 @@
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,fieldset,img,input {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    background: #fff;
+    color: @gray;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    display: block;
+}
+i,b,strong,em{
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    margin: 0;
+    text-decoration: none;
+    color:@black;
+}
+li,ol {
+    list-style: none;
+}
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.content{
+    width: 1226px;
+    margin:0 auto;
+}
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+@text-xs:12px;
+@text-sm:14px;
+@text-md:16px;
+@text-lg:18px;
+@orange:#ff6700;
+@white:#fff;
+@pink:#f10180;
+@grey:#333;
+@blue:#008cff;
+@black:#333;
+@gray:#b0b0b0;
+@red:#c00;
+.shadow(){
+    box-shadow:0 0 10px 1px #ccc ;
+}
+.shop{
+    width: 100%;
+}
