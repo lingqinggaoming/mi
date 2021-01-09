@@ -1,0 +1,100 @@
+{
+  "id": "2267184",
+  "name": "Test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "测试添加项目",
+  "glyphs": [
+    {
+      "icon_id": "7239921",
+      "name": "tool",
+      "font_class": "tool",
+      "unicode": "e75b",
+      "unicode_decimal": 59227
+    },
+    {
+      "icon_id": "567855",
+      "name": "Arrow-right",
+      "font_class": "arrow-down",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "32471",
+      "name": "cart",
+      "font_class": "cart",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "431777",
+      "name": "gift",
+      "font_class": "gift1",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "563544",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1176935",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "14966524",
+      "name": "7天退换货",
+      "font_class": "7",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "17411838",
+      "name": "Arrow Right Circle",
+      "font_class": "arrow-right-circle",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "11982713",
+      "name": "Arrow, right, next",
+      "font_class": "arrow-right-big",
+      "unicode": "e9d4",
+      "unicode_decimal": 59860
+    },
+    {
+      "icon_id": "19306723",
+      "name": "Right arrow",
+      "font_class": "zuojiantou",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "756377",
+      "name": "Right arrow",
+      "font_class": "youjiantou",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "19306733",
+      "name": "Right arrow",
+      "font_class": "xiajiantou",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "19306734",
+      "name": "Right arrow",
+      "font_class": "shangjiantou",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    }
+  ]
+}
