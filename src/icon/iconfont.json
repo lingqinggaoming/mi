@@ -6,6 +6,13 @@
   "description": "测试添加项目",
   "glyphs": [
     {
+      "icon_id": "14636674",
+      "name": "start",
+      "font_class": "play",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
       "icon_id": "7239921",
       "name": "tool",
       "font_class": "tool",
