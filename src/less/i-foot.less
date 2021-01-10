@@ -1,0 +1,174 @@
+@import "./public.less";
+footer{
+    width: 100%;
+}
+.ftservice{
+    text-align: center;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+    li{
+        a{
+            font-size: 16px;
+            color: #616161;
+            i{
+                margin-right: 6px;
+                font-size: 20px;
+                vertical-align: -2px;
+            }
+            transition: color .2s;
+            &:hover{
+                color: @orange;
+            }
+        }        
+        width: 20%;
+        float: left; 
+        position: relative;
+        box-sizing: border-box;
+        border-right: 1px solid  #e0e0e0;
+        &:last-child{
+            border:none;
+        }
+        >span{
+           position: absolute;
+           right: 0; 
+        }
+
+    }
+   
+    
+}
+.ftlink{
+    padding: 40px 0;
+}
+.ftlink-ls{
+    >div{
+        float: left;
+        .title{
+            width: 160px;
+            margin-bottom: 27px;
+            margin-top: 0;
+            font-size: 14px;
+            color: #424242;
+        }
+        li{
+            a{
+                font-size: 12px;
+                color:#757575; 
+                &:hover{
+                    color:@orange;
+                }
+            }
+            width: 160px;
+            margin-top: 10px;
+        }
+    }
+}
+.ftlink-m{
+    width: 252px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    >h3{
+        color: @orange;
+        font-size: 22px;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+    >p{
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #616161;
+    }
+    .customer{
+        display: inline-block;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        margin:1px;
+        border: 1px solid @orange;
+        color: @orange;
+        font-size: 12px;  
+        background-color: #fff; 
+        &:hover{
+            background-color: @orange;
+            color:@white;
+            transition: all .2s;
+        }    
+    }
+    >div{
+        margin-top: 10px;
+        color: #616161;
+        font-size: 12px;
+        a{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 6px;
+            margin-top: -3px;            
+            background-size: cover;
+            vertical-align: middle;
+            &:hover{
+                color:@orange;
+            }
+            &:nth-of-type(1){
+                background:url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wb.png) 50% 0 no-repeat;
+                background-size: cover;
+            }
+            &:nth-of-type(2){
+                background:url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx.png) 50% 0 no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+.site-info{
+    padding: 30px;
+    background-color:#fafafa;
+    font-size: 12px;
+}
+.info-text{
+    padding-left:67px;
+    color:@gray;
+    .sites{
+        >a{
+            color:#757575; 
+            font-size: 12px;
+        }
+    }
+    p{
+        line-height: 18px;
+        >a{
+            color:@gray;
+            font-size: 12px;
+        }
+    }
+}
+.info-links{
+    margin-top: 4px;
+    margin-bottom: 15px;
+    height: 28px;
+    a{
+        display: inline-block;
+        width: 85px;
+        height: 33px;
+        img{
+            display: block;
+            width: 85px;
+            height: 28px;
+        }
+        &:last-child{
+            width: 150px;
+            height: 40px;
+            img{
+                display: block;
+                width: 106px;
+                height: 40px; 
+            }
+        }
+    }
+}
+.slogan{
+    width: 100%;
+    height: 19px;
+    margin-top: 30px;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center;
+}

@@ -6,6 +6,34 @@
   "description": "测试添加项目",
   "glyphs": [
     {
+      "icon_id": "1487508",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "484509",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "251250",
+      "name": "mobile",
+      "font_class": "mobile",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "592805",
+      "name": "15",
+      "font_class": "15",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
       "icon_id": "14636674",
       "name": "start",
       "font_class": "play",

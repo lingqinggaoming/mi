@@ -1,0 +1,61 @@
+@import "./public.less";
+.home-tool-bar{
+    width: 84px;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    ul{
+        border: 1px solid #f5f5f5;
+        border-bottom: none; 
+        background-color: @white;
+    }
+    li{
+        width: 82px;
+        height: 90px;
+        margin: 1px;
+        border-bottom: 1px solid #f5f5f5;
+        a{
+            text-align: center;
+            color:#757575;
+            transition: color .3s;
+            &:hover{
+                color:@orange;
+            }
+            img{
+                padding-top: 18px;
+                margin:0 auto 8px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+.totop{
+    border: 1px solid #f5f5f5; 
+    margin-top: 14px;
+    background-color: @white;
+    a{
+        display: block;
+        width: 82px;
+        height: 90px;
+        margin: 1px;
+        text-align: center;
+        color:#757575;
+        transition: color .3s;
+        &:hover{
+            color:@orange;
+        }
+        img{
+            padding-top: 18px;
+            margin:0 auto 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.static{
+    display: block;
+}
+.hover{
+    display: none;
+}

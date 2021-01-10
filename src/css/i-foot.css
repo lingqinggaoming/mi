@@ -1,0 +1,243 @@
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+form,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+  background: #fff;
+  color: #b0b0b0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  display: block;
+}
+i,
+b,
+strong,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+li,
+ol {
+  list-style: none;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.content {
+  width: 1226px;
+  margin: 0 auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.shop {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+.ftservice {
+  text-align: center;
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ftservice li {
+  width: 20%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+}
+.ftservice li a {
+  font-size: 16px;
+  color: #616161;
+  transition: color 0.2s;
+}
+.ftservice li a i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: -2px;
+}
+.ftservice li a:hover {
+  color: #ff6700;
+}
+.ftservice li:last-child {
+  border: none;
+}
+.ftservice li > span {
+  position: absolute;
+  right: 0;
+}
+.ftlink {
+  padding: 40px 0;
+}
+.ftlink-ls > div {
+  float: left;
+}
+.ftlink-ls > div .title {
+  width: 160px;
+  margin-bottom: 27px;
+  margin-top: 0;
+  font-size: 14px;
+  color: #424242;
+}
+.ftlink-ls > div li {
+  width: 160px;
+  margin-top: 10px;
+}
+.ftlink-ls > div li a {
+  font-size: 12px;
+  color: #757575;
+}
+.ftlink-ls > div li a:hover {
+  color: #ff6700;
+}
+.ftlink-m {
+  width: 252px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+}
+.ftlink-m > h3 {
+  color: #ff6700;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.ftlink-m > p {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #616161;
+}
+.ftlink-m .customer {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin: 1px;
+  border: 1px solid #ff6700;
+  color: #ff6700;
+  font-size: 12px;
+  background-color: #fff;
+}
+.ftlink-m .customer:hover {
+  background-color: #ff6700;
+  color: #fff;
+  transition: all 0.2s;
+}
+.ftlink-m > div {
+  margin-top: 10px;
+  color: #616161;
+  font-size: 12px;
+}
+.ftlink-m > div a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 6px;
+  margin-top: -3px;
+  background-size: cover;
+  vertical-align: middle;
+}
+.ftlink-m > div a:hover {
+  color: #ff6700;
+}
+.ftlink-m > div a:nth-of-type(1) {
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wb.png) 50% 0 no-repeat;
+  background-size: cover;
+}
+.ftlink-m > div a:nth-of-type(2) {
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx.png) 50% 0 no-repeat;
+  background-size: cover;
+}
+.site-info {
+  padding: 30px;
+  background-color: #fafafa;
+  font-size: 12px;
+}
+.info-text {
+  padding-left: 67px;
+  color: #b0b0b0;
+}
+.info-text .sites > a {
+  color: #757575;
+  font-size: 12px;
+}
+.info-text p {
+  line-height: 18px;
+}
+.info-text p > a {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.info-links {
+  margin-top: 4px;
+  margin-bottom: 15px;
+  height: 28px;
+}
+.info-links a {
+  display: inline-block;
+  width: 85px;
+  height: 33px;
+}
+.info-links a img {
+  display: block;
+  width: 85px;
+  height: 28px;
+}
+.info-links a:last-child {
+  width: 150px;
+  height: 40px;
+}
+.info-links a:last-child img {
+  display: block;
+  width: 106px;
+  height: 40px;
+}
+.slogan {
+  width: 100%;
+  height: 19px;
+  margin-top: 30px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center;
+}

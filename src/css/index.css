@@ -97,29 +97,22 @@ header {
   width: 100%;
   height: 100%;
 }
-.topbar a {
-  color: #b0b0b0;
-  font-size: 12px;
-}
-.topbar a:hover {
-  color: #fff;
-}
-.topbar span {
-  color: #424242;
-  padding: 2px;
-}
 .header-nav {
   height: 100px;
 }
 .header-nav .header-logo {
-  margin-right: 200px;
+  margin-right: 179px;
 }
 .header-nav .header-logo a {
-  margin-top: 20px;
+  margin-top: 22px;
   display: block;
   width: 55px;
   height: 55px;
-  background: #ff6700 url(http://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat;
+  transition: all 0.2s;
+  background: #ff6700 url(../img/logo.png) no-repeat -46px center;
+}
+.header-nav .header-logo a:hover {
+  background: #ff6700 url(../img/logo.png) no-repeat 3px center;
 }
 .header-nav .header-nav-1 ul {
   float: left;
@@ -136,6 +129,51 @@ header {
 }
 .header-nav .header-nav-1 ul > li > a:hover {
   color: #ff6700;
+}
+.header-nav .search {
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+}
+.header-nav .search input:first-child {
+  width: 243px;
+  height: 48px;
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+.header-nav .search input:last-child {
+  margin-left: -5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.header-nav .search input:last-child:hover {
+  background-color: #ff6700;
+  transition: all 0.2s;
+}
+.header-nav .search .search-ls {
+  display: none;
+  width: 243px;
+  position: absolute;
+  left: 0;
+  top: 75px;
+  border: 1px solid #ff6700;
+}
+.header-nav .search .search-ls li {
+  width: 100%;
+}
+.header-nav .search .search-ls li:hover {
+  background-color: #f0f0f0;
+}
+.header-nav .search .search-ls li a {
+  line-height: normal;
+  display: block;
+  padding: 6px 15px;
+  font-size: 12px;
+  color: #424242;
 }
 .left-nav {
   width: 234px;
@@ -1638,4 +1676,298 @@ main {
 }
 .ivideo-ls > div span i {
   font-size: 12px;
+}
+footer {
+  width: 100%;
+}
+.ftservice {
+  text-align: center;
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ftservice li {
+  width: 20%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+}
+.ftservice li a {
+  font-size: 16px;
+  color: #616161;
+  transition: color 0.2s;
+}
+.ftservice li a i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: -2px;
+}
+.ftservice li a:hover {
+  color: #ff6700;
+}
+.ftservice li:last-child {
+  border: none;
+}
+.ftservice li > span {
+  position: absolute;
+  right: 0;
+}
+.ftlink {
+  padding: 40px 0;
+}
+.ftlink-ls > div {
+  float: left;
+}
+.ftlink-ls > div .title {
+  width: 160px;
+  margin-bottom: 27px;
+  margin-top: 0;
+  font-size: 14px;
+  color: #424242;
+}
+.ftlink-ls > div li {
+  width: 160px;
+  margin-top: 10px;
+}
+.ftlink-ls > div li a {
+  font-size: 12px;
+  color: #757575;
+}
+.ftlink-ls > div li a:hover {
+  color: #ff6700;
+}
+.ftlink-m {
+  width: 252px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+}
+.ftlink-m > h3 {
+  color: #ff6700;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.ftlink-m > p {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #616161;
+}
+.ftlink-m .customer {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin: 1px;
+  border: 1px solid #ff6700;
+  color: #ff6700;
+  font-size: 12px;
+  background-color: #fff;
+}
+.ftlink-m .customer:hover {
+  background-color: #ff6700;
+  color: #fff;
+  transition: all 0.2s;
+}
+.ftlink-m > div {
+  margin-top: 10px;
+  color: #616161;
+  font-size: 12px;
+}
+.ftlink-m > div a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 6px;
+  margin-top: -3px;
+  background-size: cover;
+  vertical-align: middle;
+}
+.ftlink-m > div a:hover {
+  color: #ff6700;
+}
+.ftlink-m > div a:nth-of-type(1) {
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wb.png) 50% 0 no-repeat;
+  background-size: cover;
+}
+.ftlink-m > div a:nth-of-type(2) {
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx.png) 50% 0 no-repeat;
+  background-size: cover;
+}
+.site-info {
+  padding: 30px;
+  background-color: #fafafa;
+  font-size: 12px;
+}
+.info-text {
+  padding-left: 67px;
+  color: #b0b0b0;
+}
+.info-text .sites > a {
+  color: #757575;
+  font-size: 12px;
+}
+.info-text p {
+  line-height: 18px;
+}
+.info-text p > a {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.info-links {
+  margin-top: 4px;
+  margin-bottom: 15px;
+  height: 28px;
+}
+.info-links a {
+  display: inline-block;
+  width: 85px;
+  height: 33px;
+}
+.info-links a img {
+  display: block;
+  width: 85px;
+  height: 28px;
+}
+.info-links a:last-child {
+  width: 150px;
+  height: 40px;
+}
+.info-links a:last-child img {
+  display: block;
+  width: 106px;
+  height: 40px;
+}
+.slogan {
+  width: 100%;
+  height: 19px;
+  margin-top: 30px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center;
+}
+.home-tool-bar {
+  width: 84px;
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+.home-tool-bar ul {
+  border: 1px solid #f5f5f5;
+  border-bottom: none;
+  background-color: #fff;
+}
+.home-tool-bar li {
+  width: 82px;
+  height: 90px;
+  margin: 1px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.home-tool-bar li a {
+  text-align: center;
+  color: #757575;
+  transition: color 0.3s;
+}
+.home-tool-bar li a:hover {
+  color: #ff6700;
+}
+.home-tool-bar li a img {
+  padding-top: 18px;
+  margin: 0 auto 8px;
+  width: 30px;
+  height: 30px;
+}
+.totop {
+  border: 1px solid #f5f5f5;
+  margin-top: 14px;
+  background-color: #fff;
+}
+.totop a {
+  display: block;
+  width: 82px;
+  height: 90px;
+  margin: 1px;
+  text-align: center;
+  color: #757575;
+  transition: color 0.3s;
+}
+.totop a:hover {
+  color: #ff6700;
+}
+.totop a img {
+  padding-top: 18px;
+  margin: 0 auto 8px;
+  width: 30px;
+  height: 30px;
+}
+.static {
+  display: block;
+}
+.hover {
+  display: none;
+}
+.topbar a {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.topbar a:hover {
+  color: #fff;
+}
+.topbar span {
+  color: #424242;
+  padding: 2px;
+}
+.topbar .nav-right {
+  width: 120px;
+  height: 40px;
+  margin-left: 15px;
+  text-align: center;
+  background: #424242;
+  position: relative;
+}
+.topbar .nav-right > a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.topbar .nav-right > a span {
+  color: #b0b0b0;
+  font-weight: 900;
+  font-size: 18px;
+  vertical-align: -3px;
+}
+.topbar .nav-right > a em {
+  vertical-align: top;
+}
+.topbar .nav-right > a:hover {
+  background: #fff;
+  color: #ff6700;
+}
+.topbar .nav-right > a:hover span {
+  color: #ff6700;
+}
+.topbar .cartls {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  left: -196px;
+  top: 40px;
+  border: 1px solid #000;
+  width: 316px;
+  height: 300px;
+  padding-top: 20px;
+  color: #424242;
+}
+.topbar .cartls li {
+  padding: 0 20px;
+}
+.topbar .cartls li > div {
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+}
+.topbar .cartls li:first-child div {
+  border-top: none;
+}
+.topbar .cartls img {
+  height: 60px;
+  width: 60px;
+  display: block;
 }
