@@ -126,24 +126,52 @@ main {
   color: #605751;
   font-size: 28px;
 }
-.b1-1 {
-  width: 100%;
-  height: 100px;
+.box-hd {
+  height: 58px;
 }
-.b1-2 {
-  width: 234px;
-  height: 340px;
-  border: 1px solid #000;
+.box-hd .title {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
 }
-.b1-3 {
+.seckill-box {
+  position: relative;
+}
+.seckill-box .sk-item-ctr {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  color: #b0b0b0;
+  font-size: 16px;
+  z-index: 10;
+  text-align: center;
+}
+.seckill-box .sk-item-ctr span {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  line-height: 16px;
+  padding: 3px 5px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.seckill-box .sk-item-ctr span:hover {
+  color: #ff6700;
+}
+.seckill-box .sk-item-ctr span:last-child {
+  margin-left: -5px;
+}
+.sk-item {
   width: 978px;
   height: 340px;
   overflow: hidden;
 }
-.b1-3 > ul {
+.sk-item > ul {
   width: 5000px;
 }
-.b1-3 > ul > li {
+.sk-item > ul > li {
   box-shadow: 0px 1px 0px 0px #ff6700 inset;
   width: 234px;
   float: left;
@@ -151,19 +179,19 @@ main {
   text-align: center;
   background-color: #fff;
 }
-.b1-3 > ul > li > a {
+.sk-item > ul > li > a {
   height: 339px;
   width: 100%;
   display: block;
   padding-top: 39px;
 }
-.b1-3 > ul > li > a > img {
+.sk-item > ul > li > a > img {
   width: 160px;
   height: 160px;
   display: block;
   margin: 0 37px 22px;
 }
-.b1-3 > ul > li > a > h3 {
+.sk-item > ul > li > a > h3 {
   margin: 0 20px 3px;
   font-size: 14px;
   font-weight: 400;
@@ -172,7 +200,7 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.b1-3 > ul > li > a > p {
+.sk-item > ul > li > a > p {
   height: 18px;
   margin: 0 20px 12px;
   font-size: 12px;
@@ -181,14 +209,14 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.b1-3 > ul > li > a span {
+.sk-item > ul > li > a span {
   color: #ff6700;
   font-size: 16px;
 }
-.b1-3 > ul > li > a del {
+.sk-item > ul > li > a del {
   font-size: 16px;
 }
-.b1-3 > ul > li:last-child {
+.sk-item > ul > li:last-child {
   margin-right: 0;
 }
 .aditem {
@@ -198,10 +226,6 @@ main {
 .aditem img {
   width: 100%;
   height: 120px;
-}
-.cphone-t {
-  width: 100%;
-  height: 100px;
 }
 .cphone-l {
   width: 234px;
@@ -216,6 +240,29 @@ main {
   display: block;
   width: 234px;
   height: 614px;
+}
+.cphone-item {
+  position: relative;
+}
+.cphone-item .cphone-more {
+  position: absolute;
+  right: 0;
+  top: -45px;
+}
+.cphone-item .cphone-more a {
+  display: inline-block;
+  font-size: 16px;
+  color: #424242;
+  text-align: center;
+  transition: all 0.2s;
+}
+.cphone-item .cphone-more a i {
+  font-size: 24px;
+  margin-left: 6px;
+  vertical-align: -3px;
+}
+.cphone-item .cphone-more a:hover {
+  color: #ff6700;
 }
 .cphone-r-item {
   width: 978px;
@@ -270,10 +317,6 @@ main {
   color: #ff6700;
   margin: 0 10px 14px;
 }
-.dhouseapp-t {
-  width: 100%;
-  height: 100px;
-}
 .dhouseapp-l {
   width: 234px;
   height: 614px;
@@ -295,6 +338,26 @@ main {
   width: 978px;
   text-align: center;
   position: relative;
+}
+.tabs {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  font-size: 16px;
+  color: #424242;
+  cursor: pointer;
+}
+.tabs span {
+  display: inline-block;
+  margin-left: 30px;
+  padding-bottom: 4px;
+}
+.tabs span:first-child {
+  box-shadow: 0 2px 0 0 #ff6700;
+}
+.tabs span:hover {
+  box-shadow: 0 2px 0 0 #ff6700;
+  color: #ff6700;
 }
 .dhouseapp-r-item-1 {
   position: absolute;
@@ -492,10 +555,6 @@ main {
 .dhouseapp-r-item-2 > li > a .price > del {
   color: #b0b0b0;
   margin-left: 7px;
-}
-.esmart-t {
-  width: 100%;
-  height: 100px;
 }
 .esmart-l {
   width: 234px;
@@ -783,10 +842,6 @@ main {
   font-size: 60px;
   color: #ff6700;
 }
-.fmatch-t {
-  width: 100%;
-  height: 100px;
-}
 .fmatch-l {
   width: 234px;
   height: 614px;
@@ -1006,10 +1061,6 @@ main {
   font-size: 60px;
   color: #ff6700;
 }
-.gfittings-t {
-  width: 100%;
-  height: 100px;
-}
 .gfittings-l {
   width: 234px;
   height: 614px;
@@ -1221,10 +1272,6 @@ main {
   font-size: 60px;
   color: #ff6700;
 }
-.hproduct-t {
-  width: 100%;
-  height: 100px;
-}
 .hproduct-l {
   width: 234px;
   height: 614px;
@@ -1434,6 +1481,29 @@ main {
 }
 .hproduct-r-item-m2 div:last-child span {
   font-size: 60px;
+  color: #ff6700;
+}
+.ivideo-ls {
+  position: relative;
+}
+.ivideo-ls .ivideo-more {
+  position: absolute;
+  right: 0;
+  top: -45px;
+}
+.ivideo-ls .ivideo-more a {
+  display: inline-block;
+  font-size: 16px;
+  color: #424242;
+  text-align: center;
+  transition: all 0.2s;
+}
+.ivideo-ls .ivideo-more a i {
+  font-size: 24px;
+  margin-left: 6px;
+  vertical-align: -3px;
+}
+.ivideo-ls .ivideo-more a:hover {
   color: #ff6700;
 }
 .ivideo-ls > div {

@@ -1,0 +1,248 @@
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+form,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+  background: #fff;
+  color: #b0b0b0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  display: block;
+}
+i,
+b,
+strong,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+li,
+ol {
+  list-style: none;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.content {
+  width: 1226px;
+  margin: 0 auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.shop {
+  width: 100%;
+}
+header {
+  width: 1130px;
+  height: 98px;
+  margin: 0 auto;
+}
+header div {
+  width: 200px;
+}
+header div a {
+  display: block;
+  width: 100%;
+  height: 98px;
+  background: url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat center;
+}
+main {
+  width: 100%;
+  height: 588px;
+}
+main .login-banner a {
+  display: block;
+  width: 100%;
+  height: 588px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72644d9b8031286de3cc74e151aefd90.jpg) no-repeat center;
+}
+main .loginbox-out {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+main .loginbox-md {
+  width: 1130px;
+  height: 556px;
+  padding-top: 130px;
+  margin: 0 auto;
+}
+main .loginbox-in {
+  width: 410px;
+  height: 556px;
+  margin-left: 720px;
+  background: #fff;
+}
+main .loginbox {
+  width: 410px;
+  height: 556px;
+}
+main .loginbox-top {
+  padding: 27px 0 24px;
+}
+main .loginbox-top a {
+  font-size: 24px;
+  color: #ff6700;
+}
+main .loginbox-top a:last-child {
+  color: #757575;
+}
+main .loginbox-top a:hover {
+  color: #ff6700;
+}
+main .loginbox-top span {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px 0 42px;
+  border: 1px solid #e0e0e0;
+  background: #e0e0e0;
+  vertical-align: 3px;
+}
+main .loginbox-center {
+  width: 348px;
+  margin: 0 auto;
+}
+main .loginbox-center input {
+  outline: none;
+  font-size: 100%;
+  line-height: 22px;
+  width: 316px;
+  padding: 13px 16px 13px 14px;
+  border: 1px solid #e0e0e0;
+}
+main .loginbox-center input[name="username"] {
+  margin-bottom: 14px;
+}
+main .loginbox-center input[name="password"] {
+  margin-bottom: 14px;
+}
+main .loginbox-center input[name="submit"] {
+  margin-bottom: 14px;
+  width: 348px;
+  height: 50px;
+  color: #fff;
+  background-color: #ff6700;
+}
+main .loginbox-center .submit {
+  padding-top: 10px;
+}
+main .loginbox-center .error {
+  display: none;
+  color: #ff6700;
+  text-align: left;
+}
+main .loginbox-center .error i {
+  margin-right: 5px;
+}
+main .loginbox-center .info-more p:first-child {
+  margin-bottom: 30px;
+}
+main .loginbox-center .info-more p:first-child a {
+  color: #ff6700;
+}
+main .loginbox-center .info-more p:nth-of-type(2) a {
+  color: #999;
+}
+main .loginbox-center .info-more p:nth-of-type(2) a:hover {
+  color: #ff6700;
+}
+main .loginbox-center .info-more .outlink {
+  padding-top: 143px;
+}
+main .loginbox-center .info-more .outlink a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 0 17px;
+  border-radius: 50%;
+  color: #fff;
+}
+main .loginbox-center .info-more .outlink .iconqq {
+  background: #0288d1;
+}
+main .loginbox-center .info-more .outlink .iconweibo {
+  background: #d32f2f;
+}
+main .loginbox-center .info-more .outlink .iconalipay {
+  background: #0ae;
+}
+main .loginbox-center .info-more .outlink .iconweixin {
+  background: #00d20d;
+}
+footer {
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+  color: #757575;
+}
+footer p a {
+  color: #757575;
+}
+footer p a:hover {
+  color: #333;
+}
+footer p a:first-child {
+  font-size: 14px;
+}
+footer p a:fhover {
+  color: #333;
+}
+footer p span {
+  padding: 0 8px;
+}
+footer .ftmore {
+  padding: 10px;
+}
+footer .ftmore a {
+  color: #757575;
+}
+footer .ftmore img {
+  display: inline;
+}

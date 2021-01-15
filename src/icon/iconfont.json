@@ -6,6 +6,83 @@
   "description": "测试添加项目",
   "glyphs": [
     {
+      "icon_id": "14679505",
+      "name": "divide",
+      "font_class": "divide1",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "1080346",
+      "name": "subtract",
+      "font_class": "subtract",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "10793034",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "15167635",
+      "name": "correct",
+      "font_class": "correct1",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "5397249",
+      "name": "correct",
+      "font_class": "right",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15167571",
+      "name": "correct",
+      "font_class": "correct",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "1201469",
+      "name": "heart",
+      "font_class": "heart",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "778722",
+      "name": "alipay",
+      "font_class": "alipay",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1049698",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "6822917",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "14343857",
+      "name": "weixin",
+      "font_class": "weixin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "1487508",
       "name": "close",
       "font_class": "close",

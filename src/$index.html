@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <script src="./js/$index.js" type="module"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                         <a href="javascript:;">Select Location</a>
                     </div>
                     <div class="nav-right right">
-                        <a href="" class="">
+                        <a href="" class="cart">
                             <span class="iconfont iconcart"></span>
                             <em>购物车</em>
                             <i>(0)</i>
@@ -57,28 +58,39 @@
                             <div>
                                 <ul>
                                     <li>
-                                        <div class="cartls-1" style="border-top: none;">
-                                            <a href="">
-                                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575427252.04796744.jpg?width=60&height=60" alt="">
+                                        <div class="cartls-1">
+                                            <a href="" class="cartls-img" style="display:block;width: 60px;">
+                                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575427252.04796744.jpg?width=60&height=60"
+                                                    alt="">
                                             </a>
                                             <a href="">Redmi小爱音箱 Play 白色</a>
                                             <span>99元 × 1</span>
-                                            <a href="" class="iconfont close"></a>
-                                        </div>                                        
+                                            <a href="" class="iconfont iconclose"></a>
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="cartls-2">
                                             <a href="">
-                                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1560230039.28979252.jpg?width=60&height=60" alt="">
+                                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1560230039.28979252.jpg?width=60&height=60"
+                                                    alt="">
                                             </a>
                                             <a href="">小米小爱音箱 Play 量产版 白色</a>
                                             <span>99元 × 1</span>
-                                            <a href="" class="iconfont close"></a>
-                                        </div>                                       
+                                            <a href="" class="iconfont iconclose"></a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
-                            <p style="display: none;">购物车中还没有商品，赶紧选购吧！</p>
+                            <p>购物车中还没有商品，赶紧选购吧！</p>
+                            <div class="carttotal clear">
+                                <div class="total left">
+                                    <i>共 2 件商品</i>
+                                    <span><em>288</em>元</span>
+                                </div>
+                                <div class="count right">
+                                    <a href="">去购物车结算</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="nav-md right">
@@ -97,6 +109,83 @@
             </div>
             <div class="header-nav-1">
                 <ul>
+                    <li class="goodsmore">
+                        <a href="#" class="more">全部商品分类</a>
+                        <div class="left-nav">
+                            <ul class="category-item">
+                                <li class="category-item-1">
+                                    <a href="">
+                                        <span>手机 手机卡</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-2">
+                                    <a href="">
+                                        <span>电视 盒子</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-3">
+                                    <a href="">
+                                        <span>笔记本 显示器</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-4">
+                                    <a href="">
+                                        <span>家电 插线板</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-5">
+                                    <a href="">
+                                        <span>出行 穿戴</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-6">
+                                    <a href="">
+                                        <span>智能 路由器</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-7">
+                                    <a href="">
+                                        <span>电源 配件</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-8">
+                                    <a href="">
+                                        <span>健康 儿童</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-9">
+                                    <a href="">
+                                        <span>耳机 音箱</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                                <li class="category-item-10">
+                                    <a href="">
+                                        <span>生活 箱包</span>
+                                        <em class="iconfont iconyoujiantou"></em>
+                                    </a>
+                                    <div class="category-item-r-1"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <li>
                         <a href="">小米手机</a>
                         <div style="display: none;">
@@ -148,154 +237,78 @@
                 <form action="">
                     <input type="text">
                     <input type="submit" class="iconfont iconsearch" value="">
-                </form> 
+                </form>
                 <div class="search-ls">
                     <ul>
-                        <li><a href="">小米11</a></li>
-                        <li><a href="">笔记本</a></li>
-                        <li><a href="">Note 9 </a></li>
-                        <li><a href="">小米10</a></li>
-                        <li><a href="">洗衣机</a></li>
-                        <li><a href="">全部商品</a></li>
-                        <li><a href="">加湿器</a></li>
-                        <li><a href="">耳机</a></li>
-                        
+                        <li><a href="#">小米11</a></li>
+                        <li><a href="#">笔记本</a></li>
+                        <li><a href="#">Note 9 </a></li>
+                        <li><a href="#">小米10</a></li>
+                        <li><a href="#">洗衣机</a></li>
+                        <li><a href="#">全部商品</a></li>
+                        <li><a href="#">加湿器</a></li>
+                        <li><a href="#">耳机</a></li>
                     </ul>
-                </div>              
+                </div>
             </div>
         </div>
-        <div class="content">
-            <div class="left-nav">
-                <ul class="category-item">
-                    <li class="category-item-1">
-                        <a href="">
-                            <span>手机 手机卡</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-2">
-                        <a href="">
-                            <span>电视 盒子</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-3">
-                        <a href="">
-                            <span>笔记本 显示器</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-4">
-                        <a href="">
-                            <span>家电 插线板</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-5">
-                        <a href="">
-                            <span>出行 穿戴</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-6">
-                        <a href="">
-                            <span>智能 路由器</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-7">
-                        <a href="">
-                            <span>电源 配件</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-8">
-                        <a href="">
-                            <span>健康 儿童</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-9">
-                        <a href="">
-                            <span>耳机 音箱</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                    <li class="category-item-10">
-                        <a href="">
-                            <span>生活 箱包</span>
-                            <em class="iconfont iconyoujiantou"></em>
-                        </a>
-                        <div class="category-item-r-1"></div>
-                    </li>
-                </ul>
-            </div>
+        <div id="swiper" class="content">
+            <ul>
+                <li class="active"><a href=""><img src="./img/swiper01.jpg" alt=""></a></li>
+                <li><a href=""><img src="./img/swiper02.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/swiper03.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/swiper04.webp" alt=""></a></li>
+            </ul>
+            <span class="btl"></span>
+            <span class="btr"></span>
+            <ol class="btb clear">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </div>
-        <div class="content a1 clear">
-            <div class="a1-1 left">
-                <ul class="a-1-1 clear">
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
+        <div class="content home-hero clear">
+            <div class="home-hero-1 left">
+                <ul class="clear">
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
                                 alt=""><span>小米秒杀</span></a></li>
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
                                 alt=""><span>企业团购</span></a></li>
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
                                 alt=""><span>F码通道</span></a></li>
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
                                 alt=""><span>米粉卡</span></a></li>
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
                                 alt=""><span>以旧换新</span></a></li>
-                    <li><a href="javascript:;"><img
-                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
+                    <li><a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
                                 alt=""><span>话费充值</span></a></li>
                 </ul>
             </div>
-            <div class="a1-2 left">
-                <a href="javascript:;"><img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e5f20a62c3d5b3d6806bd51ab6c5dd12.jpg?w=632&h=340"
+            <div class="home-hero-2 left">
+                <a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e5f20a62c3d5b3d6806bd51ab6c5dd12.jpg?w=632&h=340"
                         alt=""></a>
             </div>
-            <div class="a1-3 left">
-                <a href="javascript:;"><img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8a43378b96501d7e227a9018fe2668c5.jpg?w=632&h=340"
+            <div class="home-hero-3 left">
+                <a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8a43378b96501d7e227a9018fe2668c5.jpg?w=632&h=340"
                         alt=""></a>
             </div>
-            <div class="a1-4 left">
-                <a href="javascript:;"><img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/793913688bfaee26b755a0b0cc8575fd.jpg?w=632&h=340"
+            <div class="home-hero-4 left">
+                <a href="javascript:;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/793913688bfaee26b755a0b0cc8575fd.jpg?w=632&h=340"
                         alt=""></a>
             </div>
         </div>
     </header>
     <main>
         <!-- ----------------秒杀-------------- -->
-        <div class="content b1">
-            <div class="b1-1">
-                <div class="left">
-                    小米闪购
-                </div>
-                <div class="right">
-                    <a href="#" class="iconfont iconzuojiantou"></a>
-                    <a href="#" class="iconfont iconyoujiantou"></a>
-                </div>
+        <div class="content">
+            <div class="box-hd">
+                <h2 class="title left">小米秒杀</h2>
             </div>
-            <div class="clear">
+            <div class="seckill-box clear">
                 <div class="seckill left">
                     <div class="countime">2020场</div>
-                    <img src="../img/flash.jpg" alt="">
+                    <img class="lazy" data-original="./img/flash.jpg" alt="">
                     <p>距离结束还有</p>
                     <div class="countdown">
                         <span>20</span>
@@ -305,11 +318,12 @@
                         <span>20</span>
                     </div>
                 </div>
-                <div class="b1-3 right">
+                <div class="sk-item right">
                     <ul>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
                                     alt="">
                                 <h3>小米移动电源3 10000mAh超级闪充版（50W）​ 黑色</h3>
                                 <p>大容量，超级闪充</p>
@@ -318,7 +332,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
                                     alt="">
                                 <h3>日常元素抽纸 青春版 24包/箱</h3>
                                 <p>精选原生竹浆，健康环保</p>
@@ -327,7 +342,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
                                     alt="">
                                 <h3>米家护颈记忆绵枕 灰色</h3>
                                 <p>高低曲线承托，睡眠更自在</p>
@@ -336,7 +352,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
                                     alt="">
                                 <h3>RedmiBook 16 i5 16G 512G MX350 灰色</h3>
                                 <p>便携大屏，全“芯”超越</p>
@@ -345,7 +362,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
                                     alt="">
                                 <h3>小米移动电源3 10000mAh超级闪充版（50W）​ 黑色</h3>
                                 <p>大容量，超级闪充</p>
@@ -354,7 +372,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
                                     alt="">
                                 <h3>日常元素抽纸 青春版 24包/箱</h3>
                                 <p>精选原生竹浆，健康环保</p>
@@ -363,7 +382,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
                                     alt="">
                                 <h3>米家护颈记忆绵枕 灰色</h3>
                                 <p>高低曲线承托，睡眠更自在</p>
@@ -372,7 +392,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
                                     alt="">
                                 <h3>RedmiBook 16 i5 16G 512G MX350 灰色</h3>
                                 <p>便携大屏，全“芯”超越</p>
@@ -381,7 +402,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
                                     alt="">
                                 <h3>小米移动电源3 10000mAh超级闪充版（50W）​ 黑色</h3>
                                 <p>大容量，超级闪充</p>
@@ -390,7 +412,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
                                     alt="">
                                 <h3>日常元素抽纸 青春版 24包/箱</h3>
                                 <p>精选原生竹浆，健康环保</p>
@@ -399,7 +422,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef7b6af7926b7b44da1343e144a8f801.png"
                                     alt="">
                                 <h3>米家护颈记忆绵枕 灰色</h3>
                                 <p>高低曲线承托，睡眠更自在</p>
@@ -408,7 +432,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png"
                                     alt="">
                                 <h3>RedmiBook 16 i5 16G 512G MX350 灰色</h3>
                                 <p>便携大屏，全“芯”超越</p>
@@ -417,7 +442,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8070925c6ba4d476392499454b973ff8.png"
                                     alt="">
                                 <h3>小米移动电源3 10000mAh超级闪充版（50W）​ 黑色</h3>
                                 <p>大容量，超级闪充</p>
@@ -426,157 +452,93 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png"
                                     alt="">
                                 <h3>日常元素抽纸 青春版 24包/箱</h3>
                                 <p>精选原生竹浆，健康环保</p>
                                 <p><span>27.9</span><del>32.9</del></p>
                             </a>
-                        </li>
-                    </ul>
+                        </li>                        
+                    </ul>         
                 </div>
+                <div class="sk-item-ctr">                            
+                    <span class="btnl"><i class="iconfont iconzuojiantou"></i></span>
+                    <span class="btnr"><i class="iconfont iconyoujiantou"></i></span>
+                </div> 
             </div>
         </div>
         <!-- ---------------------广告 1-------------------- -->
         <div class="content aditem 1">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a59db7dac2804ee2b5c7be1b02b3770e.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a59db7dac2804ee2b5c7be1b02b3770e.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------手机------------------------ -->
         <div class="content cphone clear">
-            <div class="cphone-t">
-                <div class="cphone-tl left">
-                    手机
-                </div>
-                <div class="cphone-tr right">
-                    <a href="#" class="iconfont iconzuojiantou"></a>
-                    <a href="#" class="iconfont iconyoujiantou"></a>
-                </div>
+            <div class="box-hd">
+                <h2 class="title left">手机</h2>
             </div>
             <div class="clear cphone-item">
                 <div class="cphone-l left">
                     <a href="#">
-                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb1bd61ad71c45a4f67f09b075463944.jpeg"
+                        <img class="lazy"
+                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb1bd61ad71c45a4f67f09b075463944.jpeg"
                             alt="">
                     </a>
                 </div>
                 <div class="cphone-r right">
                     <ul class="cphone-r-item clear">
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg"
-                                    alt="">
-                                <h3>小米11</h3>
-                                <p>骁龙888 | 2K四曲面屏</p>
-                                <div class="price"><span>3999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b19bf0e7e599c1bbbce510fb0dbc8bc.jpg"
-                                    alt="">
-                                <h3>Redmi K30 至尊版</h3>
-                                <p>120Hz弹出全面屏，天玑1000+旗舰处理器</p>
-                                <div class="price"><span>1999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg"
-                                    alt="">
-                                <h3>小米11</h3>
-                                <p>骁龙888 | 2K四曲面屏</p>
-                                <div class="price"><span>3999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b19bf0e7e599c1bbbce510fb0dbc8bc.jpg"
-                                    alt="">
-                                <h3>Redmi K30 至尊版</h3>
-                                <p>120Hz弹出全面屏，天玑1000+旗舰处理器</p>
-                                <div class="price"><span>1999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg"
-                                    alt="">
-                                <h3>小米11</h3>
-                                <p>骁龙888 | 2K四曲面屏</p>
-                                <div class="price"><span>3999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b19bf0e7e599c1bbbce510fb0dbc8bc.jpg"
-                                    alt="">
-                                <h3>Redmi K30 至尊版</h3>
-                                <p>120Hz弹出全面屏，天玑1000+旗舰处理器</p>
-                                <div class="price"><span>1999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg"
-                                    alt="">
-                                <h3>小米11</h3>
-                                <p>骁龙888 | 2K四曲面屏</p>
-                                <div class="price"><span>3999元</span><span>起</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b19bf0e7e599c1bbbce510fb0dbc8bc.jpg"
-                                    alt="">
-                                <h3>Redmi K30 至尊版</h3>
-                                <p>120Hz弹出全面屏，天玑1000+旗舰处理器</p>
-                                <div class="price"><span>1999元</span><span>起</span></div>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
+                <div class="cphone-more">                        
+                    <a href="">查看全部<i class="iconfont iconarrow-right-big"></i></a>
+                </div> 
             </div>
 
         </div>
         <!-- ---------------------广告 2-------------------- -->
         <div class="content aditem 2">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------家电------------------------ -->
         <div class="content dhouseapp clear">
-            <div class="dhouseapp-t">
-                <div class="dhouseapp-tl left">
-
-                </div>
-                <div class="dhouseapp-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
+            <div class="box-hd">
+                <h2 class="title left">家电</h2>
             </div>
             <div class="clear dhouseapp-item">
                 <div class="dhouseapp-l left">
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45c4de5f15f6dc9946e5d0827fd96d71.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45c4de5f15f6dc9946e5d0827fd96d71.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e03c0fe4af4d613603f22aaa8e0ea00.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e03c0fe4af4d613603f22aaa8e0ea00.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="dhouseapp-r right">
+                    <div class="tabs">
+                        <span>热门</span><span>电视影音</span>
+                    </div>
                     <ul class="dhouseapp-r-item-1 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -585,7 +547,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -594,7 +557,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -603,7 +567,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -612,7 +577,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -621,7 +587,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -630,7 +597,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -645,7 +613,8 @@
                                         <p>2298元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -666,7 +635,8 @@
                     <ul class="dhouseapp-r-item-2 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -675,7 +645,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -684,7 +655,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -693,7 +665,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -702,7 +675,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -711,7 +685,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a3d09cb5b895f8c3706f513552cd53d.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>Air 13.3" 2019款</h3>
                                 <p>新一代独立显卡</p>
@@ -720,7 +695,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3483b4ec83f3d085c567633f2edef1c1.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -735,7 +711,8 @@
                                         <p>2298元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -759,41 +736,43 @@
         <!-- -------------------------广告 3------------------------ -->
         <div class="content aditem 3">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------智能------------------------ -->
         <div class="content esmart clear">
-            <div class="esmart-t">
-                <div class="esmart-tl left">
-
-                </div>
-                <div class="esmart-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
+            <div class="box-hd">
+                <h2 class="title left">智能</h2>
             </div>
             <div class="clear esmart-item">
                 <div class="esmart-l left">
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ffe114f73fac3a45e5622c3eff56106b.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ffe114f73fac3a45e5622c3eff56106b.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a660ce095e8f553a9ed1515265f4e9fc.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a660ce095e8f553a9ed1515265f4e9fc.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="esmart-r right">
                     <!-- 列表1 -->
+                    <div class="tabs">
+                        <span>热门</span><span>安防</span><span>出行</span>
+                    </div>
                     <ul class="esmart-r-item-1 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -802,7 +781,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -811,7 +791,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -820,7 +801,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -829,7 +811,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -838,7 +821,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -847,7 +831,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -862,7 +847,8 @@
                                         <p>1299元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -884,7 +870,8 @@
                     <ul class="esmart-r-item-2 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -893,7 +880,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -902,7 +890,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -911,7 +900,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -920,7 +910,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -929,7 +920,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -938,7 +930,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -953,7 +946,8 @@
                                         <p>1299元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -975,7 +969,8 @@
                     <ul class="esmart-r-item-3 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -984,7 +979,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -993,7 +989,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -1002,7 +999,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -1011,7 +1009,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -1020,7 +1019,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -1029,7 +1029,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200"
                                     alt="">
                                 <h3>小米全面屏电视E32C</h3>
                                 <p>全面屏设计，人工智能系统</p>
@@ -1044,7 +1045,8 @@
                                         <p>1299元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f10b003b4ff46c59f5736e8f324af034.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -1068,41 +1070,43 @@
         <!-- -------------------------广告 4------------------------ -->
         <div class="content aditem 4">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/01cc6a570d32a2ee09a2d5c2009a9968.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/01cc6a570d32a2ee09a2d5c2009a9968.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------搭配------------------------ -->
         <div class="content fmatch clear">
-            <div class="fmatch-t">
-                <div class="fmatch-tl left">
-
-                </div>
-                <div class="fmatch-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
+            <div class="box-hd">
+                <h2 class="title left">搭配</h2>
             </div>
             <div class="clear fmatch-item">
                 <div class="fmatch-l left">
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6874615b3c50e837ffe532eb6ea4ef1a.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6874615b3c50e837ffe532eb6ea4ef1a.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a00bdd568dbc2b02f8fe0fa8d1b46f28.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a00bdd568dbc2b02f8fe0fa8d1b46f28.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="fmatch-r right">
+                    <div class="tabs">
+                        <span>热门</span><span>耳机音箱</span>
+                    </div>
                     <!-- 列表1 -->
                     <ul class="fmatch-r-item-1 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1111,7 +1115,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1120,7 +1125,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1129,7 +1135,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1138,7 +1145,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1147,7 +1155,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1156,7 +1165,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米真无线蓝牙耳机Air 2 Pro</h3>
                                 <p> 主动降噪/持久续航/无线充</p>
@@ -1171,7 +1181,8 @@
                                         <p>199元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg"
                                             alt="">
                                     </div>
                                 </a>
@@ -1193,7 +1204,8 @@
                     <ul class="fmatch-r-item-2 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1202,7 +1214,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1211,7 +1224,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1220,7 +1234,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1229,7 +1244,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1238,7 +1254,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1247,7 +1264,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7d9e8308f5f55bfa69c5c7fadc7cb4aa.jpg"
                                     alt="">
                                 <h3>Redmi AirDots 2真无线蓝牙耳机</h3>
                                 <p>支持蓝牙5.0，自动秒连，拿起就能用</p>
@@ -1262,7 +1280,8 @@
                                         <p>199元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg"
                                             alt="">
                                     </div>
                                 </a>
@@ -1286,41 +1305,43 @@
         <!-- -------------------------广告 5------------------------ -->
         <div class="content aditem 5">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1615d1842fe85914a545297836a44271.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1615d1842fe85914a545297836a44271.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------配件------------------------ -->
         <div class="content gfittings clear">
-            <div class="gfittings-t">
-                <div class="gfittings-tl left">
-
-                </div>
-                <div class="gfittings-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
-            </div>
+            <div class="box-hd">
+                <h2 class="title left">配件</h2>
+            </div>            
             <div class="clear gfittings-item">
                 <div class="gfittings-l left">
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f64bbd58c3f5001bdf0688894f22cb6.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f64bbd58c3f5001bdf0688894f22cb6.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ffe4182f1d9a5befdf2380ec90ae1620.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ffe4182f1d9a5befdf2380ec90ae1620.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="gfittings-r right">
+                    <div class="tabs">
+                        <span>热门</span><span>充电器</span>
+                    </div>
                     <!-- 列表1 -->
                     <ul class="gfittings-r-item-1 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1329,7 +1350,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1338,7 +1360,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1347,7 +1370,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1356,7 +1380,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1365,7 +1390,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1374,7 +1400,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米无线充电宝青春版10000mAh</h3>
                                 <p>能量满满，无线有线都能充</p>
@@ -1389,7 +1416,8 @@
                                         <p>149元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -1411,7 +1439,8 @@
                     <ul class="gfittings-r-item-2 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1420,7 +1449,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1429,7 +1459,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1438,7 +1469,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1447,7 +1479,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1456,7 +1489,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1465,7 +1499,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>小米车载充电器快充版1A1C 100W</h3>
                                 <p>小米车载充电器快充版1A1C 100W</p>
@@ -1480,7 +1515,8 @@
                                         <p>149元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -1504,41 +1540,43 @@
         <!-- -------------------------广告 6------------------------ -->
         <div class="content aditem 6">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9880db34d227b6c1df5b45cb7df4f465.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9880db34d227b6c1df5b45cb7df4f465.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------周边------------------------ -->
         <div class="content hproduct clear">
-            <div class="hproduct-t">
-                <div class="hproduct-tl left">
-
-                </div>
-                <div class="hproduct-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
-            </div>
+            <div class="box-hd">
+                <h2 class="title left">周边</h2>
+            </div>            
             <div class="clear hproduct-item">
                 <div class="hproduct-l left">
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca0940f052227d235e7de5678d106c89.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca0940f052227d235e7de5678d106c89.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/942985dc060f9274bdd1be4b02f1d7ef.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            <img class="lazy"
+                                data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/942985dc060f9274bdd1be4b02f1d7ef.jpg?thumb=1&w=234&h=300&f=webp&q=90"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="hproduct-r right">
+                    <div class="tabs">
+                        <span>热门</span><span>出行</span>
+                    </div>
                     <!-- 列表1 -->
                     <ul class="hproduct-r-item-1 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1547,7 +1585,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1556,7 +1595,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1565,7 +1605,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1574,7 +1615,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1583,7 +1625,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1592,7 +1635,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家飞行员太阳镜 Pro</h3>
                                 <p>尼龙偏光，轻巧佩戴</p>
@@ -1607,7 +1651,8 @@
                                         <p>49元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1062daf42a1a5b2a9108510ecf83d0b.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1062daf42a1a5b2a9108510ecf83d0b.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -1629,7 +1674,8 @@
                     <ul class="hproduct-r-item-2 clear">
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1638,7 +1684,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1647,7 +1694,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1656,7 +1704,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1665,7 +1714,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1674,7 +1724,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1683,7 +1734,8 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                                <img class="lazy"
+                                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0b1119165c481376399aab53330e015.jpg?thumb=1&w=200&h=200&f=webp&q=90"
                                     alt="">
                                 <h3>米家运动鞋4</h3>
                                 <p>轻盈若絮,弹若脱兔</p>
@@ -1698,7 +1750,8 @@
                                         <p>49元</p>
                                     </div>
                                     <div class="right">
-                                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1062daf42a1a5b2a9108510ecf83d0b.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                                        <img class="lazy"
+                                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1062daf42a1a5b2a9108510ecf83d0b.jpg?thumb=1&w=100&h=100&f=webp&q=90"
                                             alt="">
                                     </div>
                                 </a>
@@ -1722,24 +1775,24 @@
         <!-- -------------------------广告 7------------------------ -->
         <div class="content aditem 7">
             <a href="#">
-                <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg" alt="">
+                <img class="lazy"
+                    data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg"
+                    alt="">
             </a>
         </div>
         <!-- -------------------------视频------------------------ -->
         <div class="content ivideo clear">
-            <div class="ivideo-t" style="height: 100px;">
-                <div class="ivideo-tl left">
-
-                </div>
-                <div class="ivideo-tr right">
-                    <a href="JavaScript:;"></a>
-                    <a href="JavaScript:;"></a>
-                </div>
+            <div class="box-hd">
+                <h2 class="title left">视频</h2>
             </div>
             <div class="ivideo-ls">
+                <p class="ivideo-more">                        
+                    <a href="">查看全部<i class="iconfont iconarrow-right-big"></i></a>
+                </p> 
                 <div>
                     <a href="javascript:;">
-                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=296&h=180&f=webp&q=90"
+                        <img class="lazy"
+                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=296&h=180&f=webp&q=90"
                             alt="">
                         <span><i class="iconfont iconplay"></i></span>
                         <h3>Redmi 10X系列发布会</h3>
@@ -1748,7 +1801,8 @@
                 </div>
                 <div>
                     <a href="javascript:;">
-                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=296&h=180&f=webp&q=90"
+                        <img class="lazy"
+                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=296&h=180&f=webp&q=90"
                             alt="">
                         <span><i class="iconfont iconplay"></i></span>
                         <h3>小米10 青春版 发布会</h3>
@@ -1756,7 +1810,8 @@
                 </div>
                 <div>
                     <a href="javascript:;">
-                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=296&h=180&f=webp&q=90"
+                        <img class="lazy"
+                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=296&h=180&f=webp&q=90"
                             alt="">
                         <span><i class="iconfont iconplay"></i></span>
                         <h3>小米10 8K手机拍大片</h3>
@@ -1764,7 +1819,8 @@
                 </div>
                 <div>
                     <a href="javascript:;">
-                        <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a8dd25cab48c60fc6387b9001eddc3f9.jpg?thumb=1&w=296&h=180&f=webp&q=90"
+                        <img class="lazy"
+                            data-original="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a8dd25cab48c60fc6387b9001eddc3f9.jpg?thumb=1&w=296&h=180&f=webp&q=90"
                             alt="">
                         <span><i class="iconfont iconplay"></i></span>
                         <h3>小米10发布会</h3>
@@ -1868,14 +1924,15 @@
                     <span>关注小米：</span>
                     <a href=""></a>
                     <a href=""></a>
-                    <img src="http://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx-img.png" style="display: none;">
+                    <img class="lazy" data-original="http://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx-img.png"
+                        style="display: none;">
                 </div>
             </div>
         </div>
         <div class="site-info">
             <div class="content clear">
                 <div class="left">
-                    <img src="https://s02.mifile.cn/assets/static/image/logo-footer.png" alt="">
+                    <img class="lazy" data-original="https://s02.mifile.cn/assets/static/image/logo-footer.png" alt="">
                 </div>
                 <div class="info-text">
                     <p class="sites">
@@ -1938,22 +1995,26 @@
                     </p>
                     <div class="info-links">
                         <a href="">
-                            <img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification">
+                            <img class="lazy" data-original="https://i1.mifile.cn/f/i/17/site/truste.png"
+                                alt="TRUSTe Privacy Certification">
                         </a>
                         <a href="">
-                            <img src="https://s01.mifile.cn/i/v-logo-2.png" alt="诚信网站">
+                            <img class="lazy" data-original="https://s01.mifile.cn/i/v-logo-2.png" alt="诚信网站">
                         </a>
                         <a href="">
-                            <img src="https://s01.mifile.cn/i/v-logo-1.png" alt="可信网站">
+                            <img class="lazy" data-original="https://s01.mifile.cn/i/v-logo-1.png" alt="可信网站">
                         </a>
                         <a href="">
-                            <img src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"
+                            <img class="lazy"
+                                data-original="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"
                                 alt="诚信经营 放心消费">
                         </a>
                         <a href="">
-                            <img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/f1ee261b96ae71e845efba398efeca02.png"
+                            <img class="lazy"
+                                data-original="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/f1ee261b96ae71e845efba398efeca02.png"
                                 class="img1">
-                            <img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/643640cb0480b3022a11d0c704aab94f.png"
+                            <img class="lazy"
+                                data-original="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/643640cb0480b3022a11d0c704aab94f.png"
                                 class="img2" style="display: none;">
                         </a>
                     </div>
@@ -1967,58 +2028,64 @@
         <ul>
             <li>
                 <a href="" id="" class="">
-                    <img data-v-087b3ba0=""
-                        src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png" class="static">
-                    <img data-v-087b3ba0=""
-                        src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png" class="hover"
-                        style="display: none;">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png"
+                        class="static">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png"
+                        class="hover" style="display: none;">
                     <p>手机APP</p>
                 </a>
                 <div style="display: none;">
-                    <img data-v-087b3ba0="" src="https://i8.mifile.cn/b2c-mimall-media/93650133310ec1c385487417a472a26c.png">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/93650133310ec1c385487417a472a26c.png">
                     <span></span>
                 </div>
             </li>
             <li>
                 <a href="" id="" class="">
-                    <img data-v-087b3ba0=""
-                        src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png" class="static">
-                    <img data-v-087b3ba0=""
-                        src="https://i8.mifile.cn/b2c-mimall-media/41f858550f42eb1770b97faf219ae215.png" class="hover">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png"
+                        class="static">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/41f858550f42eb1770b97faf219ae215.png"
+                        class="hover">
                     <p>个人中心</p>
                 </a>
             </li>
             <li>
                 <a href="" id="" class="">
-                    <img data-v-087b3ba0="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png" class="static">
-                    <img data-v-087b3ba0="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/95fbf0081a06eec7be4d35e277faeca0.png" class="hover">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png"
+                        class="static">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/95fbf0081a06eec7be4d35e277faeca0.png"
+                        class="hover">
                     <p>售后服务</p>
                 </a>
             </li>
             <li>
                 <a href="" id="" class="">
-                    <img data-v-087b3ba0="" src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png" class="static">
-                    <img data-v-087b3ba0="" src="https://i8.mifile.cn/b2c-mimall-media/5e9f2b1b0da09ac3b3961378284ef2d4.png" class="hover">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png"
+                        class="static">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/5e9f2b1b0da09ac3b3961378284ef2d4.png"
+                        class="hover">
                     <p>人工客服</p>
                 </a>
             </li>
             <li>
                 <a href="" id="" class="">
-                    <img data-v-087b3ba0="" src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png" class="static">
-                    <img data-v-087b3ba0="" src="https://i8.mifile.cn/b2c-mimall-media/692a6c3b0a93a24f74a29c0f9d68ec71.png" class="hover">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png"
+                        class="static">
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/692a6c3b0a93a24f74a29c0f9d68ec71.png"
+                        class="hover">
                     <p>购物车</p>
                 </a>
             </li>
         </ul>
         <div class="totop" style="display: none;">
             <a href="" id="" class="">
-                <img data-v-087b3ba0="" src="https://i1.mifile.cn/f/i/2018/home/totop.png" class="static">
-                <img data-v-087b3ba0="" src="https://i1.mifile.cn/f/i/2018/home/totop_hover.png" class="hover">
+                <img src="https://i1.mifile.cn/f/i/2018/home/totop.png" class="static">
+                <img src="https://i1.mifile.cn/f/i/2018/home/totop_hover.png" class="hover">
                 <p>回顶部</p>
             </a>
         </div>
     </div>
-
 </body>
 
 </html>
+
+
